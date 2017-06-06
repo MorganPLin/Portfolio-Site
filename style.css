@@ -1,0 +1,106 @@
+/*NAV BAR*/
+#nav-bar {
+	height: 100px;
+	/*border: 1px solid red;*/
+	width: 100%;
+}
+
+#side-menu-icon {
+	height: 40px;
+	width: 40px;
+	background-image: url("./assets/nav-menu-icon.png");
+	background-size: cover;
+	background-position: center;
+	float: right;
+	border: 0px;
+	border: none;
+	margin: 28px;
+	margin-top: 18px;
+	/*border: 1px solid red;*/
+}
+
+#name-icon {
+	float: left;
+	font-family: 'Varela Round', sans-serif;
+	margin: 28px;
+	margin-left: 42px;
+	font-size: 20px;
+	/*border: 1px solid red;*/
+}
+
+body {
+	background-color: #f7f49e;
+}
+
+/*MAIN CONENT*/
+#main-content {
+	/*border: 1px solid blue;*/
+	height: 80%;
+	position: absolute;
+	width: 100%;
+	margin: 0 auto;
+
+}
+
+#slogan {
+	font-family: 'Pacifico', cursive;
+	margin: 0 auto;
+	height: 200px;
+	width: 400px;
+	font-size: 40px;
+	position: relative;
+	/*border: 1px solid blue;*/
+	top: 20%;
+}
+
+#slogan-text {
+/*	width: 300px;*/
+	margin: 0 auto;
+	text-align: center;
+}
+/*EYE CSS*/
+
+#svg-eye {
+	/*top: -138px;*/
+	/*left: 83px;*/
+	position: relative;
+	/*border: 1px solid green;*/
+	margin: 0 auto;
+	width: 110px;
+}
+
+svg {
+  margin: auto;
+}
+
+#lid {
+  animation: blink 2.4s infinite;
+}
+#eye {
+  animation: squeeze 2.4s infinite;
+}
+
+@keyframes blink {
+  90% {
+    transform: none;
+    animation-timing-function: ease-in;
+  }
+  93% {
+    transform: translateY(15px) scaleY(0)
+  }
+  100% {
+    animation-timing-function: ease-out;
+  }
+}
+@keyframes squeeze {
+  90% {
+    transform: none;
+    animation-timing-function: ease-in;
+  }
+  93% {
+    transform: translateY(3px) scaleY(0.8)
+  }
+  100% {
+    animation-timing-function: ease-out;
+  }
+}
