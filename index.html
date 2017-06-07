@@ -5,13 +5,17 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title></title>
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        
+        <!-- Twitter/bootstrap meta tag -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="main_content.css">
+        <link rel="stylesheet" href="about-me.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 		<!-- Google Font - Valera -->
         <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
@@ -26,8 +30,18 @@
         <!-- Add your site or application content here -->
         <div id = "nav-bar">
             <div id = "name-icon"><strong>MORGAN P. LIN</strong></div>
-            <div id ="side-menu-icon" class="desktop-version"></div>
+            <a id ="side-menu-icon" class="desktop-version" onclick= showMenu()></a>
+            <div id = "side-menu">
+                <div id = "x-icon" onclick=hideMenu()></div>
+                <ul>
+                    <li><a><strong>ABOUT ME</strong></a></li>
+                    <li><a><strong>WORK</strong></a></li>
+                    <li><a><strong>CONTACT</strong></a></li>
+                </ul>
+            </div>
         </div>
+        </div>
+
         <div id = "main-content">
             <div id ="slogan">
                 <div id ="svg-eye">
@@ -48,7 +62,26 @@
                 <div id = "slogan-text">visual solutions</div>
             </div>
         </div>
-
+        <div id = "about-me">
+            <div class = "container">
+                <div class = "row">
+                    <h1> ABOUT ME </h1>
+                    <div class = "col-sm-6">
+                        Hi there! I'm Morgan, a Front End Web Developer with a keen eye for design and a passion for building beautiful, clean responsive web design. I love collaborating and bringing tools and sites to a new level of functionality and form; my passion is supplemented by my experience in Full Stack Development. On the side, I practice Graphic Design, so I'm no stranger to the Adobe Suite. I'm highly adaptable, a fast learner and work well in a team environment; after all – true genius is collective genius!
+                    </div>
+<!--                     <div class = "col-sm-6"> -->
+                    <div id = "portfolio-pic">
+                    </div>
+                    <!-- </div> -->
+                </div>
+            </div>
+        </div>
+        <div id = "skills">
+        </div>
+        <div id = "portfolio">
+        </div>
+        <div id = "contact-me">
+        </div>
 
 
 <!-- SIDE -->
